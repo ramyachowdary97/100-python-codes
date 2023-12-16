@@ -1,0 +1,12 @@
+def recursion(n,rev):
+    if n==0:
+        return rev
+    else:
+        rem=n%10
+        rev=rev*10+rem
+        n=n//10
+        return recursion(n,rev)
+
+n=int(input("enter number to reverse"))
+rev=0
+print(recursion(n,rev))
