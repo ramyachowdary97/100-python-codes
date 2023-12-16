@@ -1,0 +1,11 @@
+n=int(input("enter number to check if its a palinrome "))
+temp=n
+rev=0
+while(temp>0):
+    rem=temp%10
+    rev=rev*10+rem
+    temp=temp//10
+if(n==rev):
+    print("given number is palindrome")
+else:
+    print("given number is not a palindorme")
